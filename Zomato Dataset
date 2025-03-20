@@ -1,0 +1,11 @@
+You can download Zomato from the provided code which enables you to work in your environment:
+import pandas as pd
+import gdown
+
+from google.colab import files
+
+url = f"https://drive.google.com/uc?id=1-B3C1F1fzYb-tqseby07pGu-AoDo0Yj4&export=download"
+output = "zomato.csv"
+
+# Download the file
+gdown.download(url, output, quiet=False)
